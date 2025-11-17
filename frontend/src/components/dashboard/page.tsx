@@ -78,7 +78,9 @@ const DashboardPage = () => {
       const response = await axios.post(
         `${process.env.NEXT_PUBLIC_API_URL}/users/google-calendar/disconnect`,
         {},
-        { withCredentials: true }
+        { 
+          withCredentials: true
+        }
       );
       setAuthUser(response.data);
       toast.success('Google Calendar disconnected.', { id: toastId });
