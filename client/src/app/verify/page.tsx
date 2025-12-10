@@ -2,7 +2,7 @@
 
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { verifyUser } from '@/services/auth';
 import Cookies from 'js-cookie';
@@ -106,4 +106,18 @@ const VerifyPage = () => {
   );
 };
 
-export default VerifyPage;
+const VerifyPageWrapper = () => {
+    return (
+        // The fallback is shown during the initial server render
+        // This tells Next.js where to "bail out" of static rendering
+        <Suspense fallback={
+            <div className="flex items-center justify-center min-h-screen">
+                <p className="text-xl text-gray-400">Loading verification form...</p>
+            </div>
+        }>
+            <VerifyPage />
+        </Suspense>
+    );
+};
+
+export default VerifyPageWrapper;

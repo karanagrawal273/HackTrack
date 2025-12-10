@@ -83,7 +83,7 @@ const ResetPasswordForm: React.FC<ResetPasswordFormProps> = ({ token }) => {
           </button>
           
           <div className="text-center text-gray-400 text-sm">
-            <p>Token: {token ? `${token.substring(0, 8)}...` : 'N/A'}</p>
+            {/* <p>Token: {token ? `${token.substring(0, 8)}...` : 'N/A'}</p> */}
           </div>
         </form>
       </div>
