@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "rootDir": "./src",        // The root directory of your source files
+    "outDir": "./dist",        // The directory for compiled JavaScript files
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true  // Helpful if you use JSON configuration files
+  },
+  "include": ["src/**/*"],     "exclude": ["node_modules", "dist"]
+}
