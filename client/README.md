@@ -14,11 +14,11 @@ Create a `.env.local` file in the root of the `client` directory with the follow
 
 | Variable | Description | Example |
 | :--- | :--- | :--- |
-| `NEXT_PUBLIC_API_URL` | The base URL for your server's API |
+| `NEXT_PUBLIC_API_URL` | The base URL for your server's API | `your server api url` |
 
 ## ▶️ Running the Client
 
-Make sure your server is running on the port specified in `NEXT_PUBLIC_API_URL` (default: 5000) before starting the client.
+Make sure your server is running on the port specified in `NEXT_PUBLIC_API_URL` before starting the client.
 
 ```bash
 # From the project root directory:
