@@ -25,7 +25,7 @@ Make sure your server is running on the port specified in `NEXT_PUBLIC_API_URL` 
 cd client
 
 # 1. Install dependencies (if needed)
-# npm install
+npm install
 
 # 2. Run the development server
 npm run dev
