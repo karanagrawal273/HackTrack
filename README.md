@@ -47,6 +47,6 @@ HackTrack is split into two main components: a Node.js/Express backend and a Nex
     * Create a `.env.local` file in the **`client`** directory.
 
 4.  **Follow the specific setup instructions for the Server and Client:**
-    * Go to Server README for configuration details
+    * server/README.md
 
-    * Go to Client README for configuration details
+    * client/README.md
