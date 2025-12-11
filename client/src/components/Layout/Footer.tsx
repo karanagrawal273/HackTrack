@@ -11,7 +11,8 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} HackTrack. All rights reserved.</p>
           <div className="space-x-4">
             <Link href="/about" className="hover:text-white transition duration-200">About</Link>
-            <Link href="/privacy" className="hover:text-white transition duration-200">Privacy Policy</Link>
+            <Link href="/privacy-policy" className="hover:text-white transition duration-200">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="hover:text-white transition duration-200">Terms of Service</Link>
             <Link href="/contact" className="hover:text-white transition duration-200">Contact</Link>
           </div>
         </div>
